@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+   
+}
+
+body{
+    background-color: #031d44;
+}
+
+.container{
+    width: 1200px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 200px auto 100px 100px;
+    grid-template-rows: 150px minmax(500px, auto)50px;
+    grid-template-areas: "topo topo topo login"
+                         "menu principal banners banners"
+                         "rodape rodape rodape rodape";
+
+}
+
+header,
+section,
+nav,
+main,
+aside,
+footer
+{
+    border: 1px solid black;
+    padding: 30px;
+    margin: 5px;
+
+}
+
+/*grid areas*/
+
+header{
+    background-color: #f94144;
+    grid-area: topo;
+}
+
+section{
+    background-color: #f3722c;
+    grid-area: login;
+}
+
+nav{
+    background-color: #f8961e;
+    grid-area: menu;
+}
+
+main{
+    background-color: #f9c74f;
+    grid-area: principal;
+}
+
+aside{
+    background-color: #90be6d;
+    grid-area: banners;
+}
+
+footer{
+    background-color: #577590;
+    grid-area: rodape;
+}
+
